@@ -104,6 +104,19 @@ def inject_css():
     .big-title {{ font-size: 2rem; font-weight: 800; margin-bottom:0; color: {TOGO_GREEN_DARK}; }}
     .subtitle {{ color: #5b6b66; font-size: 1.05rem; margin-top:0.2rem; }}
 
+    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #4A4A4A;
+    }
+    .stTabs [data-baseweb="tab-list"] button[aria-selected="true"] [data-testid="stMarkdownContainer"] p {
+        color: #006A4E;  /* vert togolais pour l'onglet actif */
+    }
+    .stTabs [data-baseweb="tab-highlight"] {
+        background-color: #006A4E;
+        height: 3px;  /* soulignement plus visible */
+    }
+
     .kpi-card {{
         background: {TOGO_WHITE};
         border-radius: 12px;
