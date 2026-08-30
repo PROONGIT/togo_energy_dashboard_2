@@ -5,6 +5,8 @@ au bois-énergie, les émissions de GES, le climat et les forêts classées du T
 des recommandations stratégiques pour l'électrification rurale, les énergies propres
 et la protection forestière.
 
+Lien du dashboard : https://togo-energy-dashboard.streamlit.app/
+
 ## Contenu
 
 - `app.py` — application Streamlit principale (6 onglets)
