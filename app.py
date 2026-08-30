@@ -51,7 +51,7 @@ kpi_card(c4, "Superficie forestière", f"{wb.dropna(subset=['forest_area_pct']).
 kpi_card(c5, "Forêts classées cartographiées", f"{len(forets)}", TOGO_GREEN, "Sur tout le pays")
 
 st.write("")
-tabs = .stTabs([
+tabs = st.tabs([
     "🔌 Accès à l'électricité",
     "🔥 Énergie des ménages",
     "🏭 Émissions polluantes",
