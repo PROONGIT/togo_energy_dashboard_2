@@ -33,7 +33,7 @@ st.caption(
 )
 
 st.markdown('<div class="top-flag-bar"></div>', unsafe_allow_html=True)
-st.title('<p class="big-title">⚡ Énergie, Climat & Forêts au Togo</p>', unsafe_allow_html=True)
+st.title("⚡ Énergie, Climat & Forêts au Togo")
 st.markdown(
     '<p class="subtitle">Électrifier les villages, développer les énergies propres et protéger les forêts — '
     'cap 2030 : accès universel à l\'électricité</p>',
