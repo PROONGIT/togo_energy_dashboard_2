@@ -27,9 +27,21 @@ Lien du dashboard : https://togo-energy-dashboard.streamlit.app/
 ## Lancer en local
 
 ```bash
+python -m venv venv
+source venv/bin/activate      # Sur Windows : venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Déposer le projet sur Github
+
+cd togo-energy-dashboard
+git init
+git add .
+git commit -m "Initial commit - dashboard Energie Togo"
+git branch -M main
+git remote add origin https://github.com/<ton-compte>/togo-energy-dashboard.git
+git push -u origin main
 
 ## Déployer sur Streamlit Community Cloud
 
@@ -50,9 +62,11 @@ Chaque onglet d'analyse suit la même logique : **état des lieux** (constats ch
 5. **Aires protégées** — carte interactive : 53 forêts classées (colorées par région) + 10 villes météo superposées (couleur = température)
 6. **Recommandations** — synthèse de l'état des lieux, puis 4 axes d'action : électrification villageoise, cuisson propre, protection forestière, **sensibilisation citoyenne**
 
-## Charte graphique
+## Mettre à jour les données
 
-Thème inspiré des plateformes gouvernementales togolaises (cf. dashboard éducation/emploi) :
-vert / jaune / rouge / blanc (couleurs du drapeau), cartes "en relief" (ombre portée, bordure
-colorée) pour les indicateurs clés et les constats.
+Pour rafraîchir le dashboard avec de nouvelles données, remplacez simplement
+les fichiers CSV correspondants dans le dossier `data/` en conservant le même
+nom de fichier et la même structure de colonnes. Le dashboard rechargera
+automatiquement les données au prochain lancement (le cache Streamlit peut
+être vidé via le menu "⋮" > "Clear cache" en haut à droite de l'application).
 
