@@ -27,8 +27,13 @@ forets = load_forets_table()
 forets_geojson = load_forets_geojson()
 
 # ---------- En-tête ----------
+st.caption(
+    
+    "Auteur : AZIAGBEDO KOKOU SODJINE, Ingénieur en Sciences informatiques, Sécurité informatique - Data & IA"
+)
+
 st.markdown('<div class="top-flag-bar"></div>', unsafe_allow_html=True)
-st.markdown('<p class="big-title">⚡ Énergie, Climat & Forêts au Togo</p>', unsafe_allow_html=True)
+st.title('<p class="big-title">⚡ Énergie, Climat & Forêts au Togo</p>', unsafe_allow_html=True)
 st.markdown(
     '<p class="subtitle">Électrifier les villages, développer les énergies propres et protéger les forêts — '
     'cap 2030 : accès universel à l\'électricité</p>',
