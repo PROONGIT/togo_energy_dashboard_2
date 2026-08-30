@@ -35,7 +35,7 @@ streamlit run app.py
 
 ## Déposer le projet sur Github
 
-'''bash
+```bash
 cd togo-energy-dashboard
 git init
 git add .
@@ -43,7 +43,7 @@ git commit -m "Initial commit - dashboard Energie Togo"
 git branch -M main
 git remote add origin https://github.com/<ton-compte>/togo-energy-dashboard.git
 git push -u origin main
-'''
+```
 
 ## Déployer sur Streamlit Community Cloud
 
